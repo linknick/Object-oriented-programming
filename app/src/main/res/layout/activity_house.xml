@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/house"
+    tools:context=".activities.HouseActivity"><Button
+    android:id="@+id/front_button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:onClick="openFrontActivity"
+    android:text="@string/front_button"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/characters_button"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/characters_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="openCharactersActivity"
+        android:text="@string/characters_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/levels_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/front_button" />
+
+    <Button
+        android:id="@+id/levels_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="openLevelsActivity"
+        android:text="@string/levels_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gacha_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/characters_button" />
+
+    <Button
+        android:id="@+id/gacha_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="openGachaActivity"
+        android:text="@string/gacha_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/house_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/levels_button" />
+
+    <Button
+        android:id="@+id/house_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#A9A9A9"
+        android:text="@string/house_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settings_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gacha_button" />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="openSettingsActivity"
+        android:text="@string/settings_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/house_button" />
+
+    <ImageView
+        android:id="@+id/character_00"
+        android:layout_width="100dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="false"
+        android:onClick="openSelectActivity"
+        android:scaleType="fitCenter"
+        android:src="@drawable/questionmark"
+        android:tag="Character0"
+        app:layout_constraintEnd_toStartOf="@+id/character_01"
+        app:layout_constraintTop_toTopOf="@+id/character_01" />
+
+    <ImageView
+        android:id="@+id/character_01"
+        android:layout_width="100dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="false"
+        android:onClick="openSelectActivity"
+        android:scaleType="fitCenter"
+        android:src="@drawable/questionmark"
+        android:tag="Character1"
+        app:layout_constraintEnd_toStartOf="@+id/character_02"
+        app:layout_constraintTop_toTopOf="@+id/character_02" />
+
+    <ImageView
+        android:id="@+id/character_02"
+        android:layout_width="100dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="false"
+        android:onClick="openSelectActivity"
+        android:scaleType="fitCenter"
+        android:src="@drawable/questionmark"
+        android:tag="Character2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/character_03"
+        android:layout_width="100dp"
+        android:layout_height="142dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:adjustViewBounds="false"
+        android:onClick="openSelectActivity"
+        android:scaleType="fitCenter"
+        android:src="@drawable/questionmark"
+        android:tag="Character3"
+        app:layout_constraintStart_toEndOf="@+id/character_02"
+        app:layout_constraintTop_toTopOf="@+id/character_02" />
+
+    <ImageView
+        android:id="@+id/character_04"
+        android:layout_width="100dp"
+        android:layout_height="142dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:adjustViewBounds="false"
+        android:onClick="openSelectActivity"
+        android:scaleType="fitCenter"
+        android:src="@drawable/questionmark"
+        android:tag="Character4"
+        app:layout_constraintStart_toEndOf="@+id/character_03"
+        app:layout_constraintTop_toTopOf="@+id/character_03" />
+
+</android.support.constraint.ConstraintLayout>

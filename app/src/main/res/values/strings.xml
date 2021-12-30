@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">OOP Final Project UI Prototype</string>
+    <string name="game_name">遊\n戲\n名\n稱</string>
+    <string name="battle_not_implemented">︵\n戰\n鬥\n還\n沒\n實\n作\n︶</string>
+    <string name="team">隊伍</string>
+    <string name="character_name">名字：</string>
+    <string name="character_class">類型：</string>
+    <string name="character_level">等級：</string>
+    <string name="character_exp">經驗值：</string>
+    <string name="character_hp">生命值：</string>
+    <string name="character_equipment">裝備：</string>
+    <string name="character_attack">攻擊值：</string>
+    <string name="menu_button">選單</string>
+    <string name="start_button">點擊進入戰鬥</string>
+    <string name="main_button">回主畫面</string>
+    <string name="front_button">首頁</string>
+    <string name="characters_button">角色</string>
+    <string name="levels_button">關卡</string>
+    <string name="gacha_button">轉蛋</string>
+    <string name="house_button">小屋</string>
+    <string name="settings_button">設定</string>
+    <string name="player_information_button">玩家資訊</string>
+    <string name="objects_button">道具</string>
+    <string name="game_settings_button">遊戲設定</string>
+    <string name="back_button">回去</string>
+</resources>
